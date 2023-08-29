@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Nay Oo Lwin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nay Oo Lwin</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#language">Language</a></li>
+                <li><a href="#job-history">Job</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nay Oo Lwin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#language" onclick="toggleMenu()">Language</a></li>
+                <li><a href="#job-history" onclick="toggleMenu()">Job</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpg" alt="Nay Oo Lwin profile picture" class="profile-img" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Nay Oo Lwin</h1>
+            <p class="section__text__p2">System Engineer/Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV_NayOoLwin.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon" onclick="window.open('https://www.linkedin.com/in/nay-oo-lwin-job95/', '_blank')">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="window.open('https://github.com/nayoolwinjob95', '_blank')">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" style="width: 300px; object-fit: cover; object-position: left;">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>3+ years <br>System Engineer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <a href="https://drive.google.com/file/d/1o8FOBRbjDskiXifb4oxR85aijHKwi-Co/view?usp=sharing" target="_blank" class="click-link">
+                            <p>B.Sc. Bachelors Degree<br>Business Information Technology</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Graduate of Business Information Technology with experience working across the full stack of web development and data analysis through Informatica Intelligent Cloud Service (IICS). Currently, I am open to a new exciting role where I can grow my knowledge and continue to learn from other experienced team members.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">FullStack Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>jQuery</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>JSON</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Oracle</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Unity</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Postman</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>IICS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#language'">
+    </section>
+    <section id="language">
+        <p class="section__text__p1">See My</p>
+        <h1 class="title">Language Proficiency</h1>
+        <div class="experience-details-container">
+            <div class="about-containers language-container">
+                <div class="details-container burmese background-cover">
+                    <h2 class="experience-sub-title language-sub-title">Burmese</h2>
+                    <p>Native</p>
+                </div>
+                <div class="details-container english background-cover">
+                    <h2 class="experience-sub-title language-sub-title">English</h2>
+                    <p>Intermediate</p>
+                    <a href="https://drive.google.com/file/d/12xznIlNcsoDHfwCYMYLgAXNuJzEgAqoi/view?usp=sharing" target="_blank" class="click-link"><p>IELTS score 6.5</p></a>
+                </div>
+                <div class="details-container japanese background-cover">
+                    <h2 class="experience-sub-title language-sub-title">Japanese</h2>
+                    <p>Intermediate</p>
+                    <a href="https://drive.google.com/file/d/1hSCG0FadqaoHp4yUb4zMFXQ0W0eTzOwa/view?usp=sharing" target="_blank" class="click-link"><p>N2 (JLPT pass)</p></a>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#job-history'">
+    </section>
+    <section id="job-history">
+        <p class="section__text__p1">Travel Through My</p>
+        <h1 class="title">Job History</h1>
+        <div class="experience-details-container">
+            <div class="about-containers language-container">
+                <div class="details-container">
+                    <div class="section-container" style="margin-left: 30px; margin-right: 30px;">
+                        <div class="section__pic-container job-pic-container" style="align-items: center;">
+                            <a href="https://studiopuppeteer.com/" target="_blank"><img src="./assets/studiopuppeteer.jpg" alt="Profile picture" class="about-pic job-pic"></a>
+                        </div>
+                        <div class="about-details-container job-text">
+                            <h1>Game Programmer (Internship)</h1>
+                            <h3><a href="https://studiopuppeteer.com/" target="_blank" class="click-link">Studio Puppeteer</a> | 05/2018 - 08/2018</h3>
+                            <div class="text-container job-description">
+                                <p>◉ Responsible of developing the game called “Hidden Culture” which is a memory puzzle type game and developed together with a senior Art Designer.</p>
+                                <p>◉ Before the end of internship, developed a horror type of game together with other two internship members (2D Artist and 3D Artist) as a final challenge of internship period.</p>
+                            </div>
+                            <div class="job-image-container" style="align-items: center;">
+                                <img src="./assets/unitygame.png" alt="Profile picture" class="about-pic job-skill-pic">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="section-container" style="margin-left: 30px; margin-right: 30px;">
+                        <div class="section__pic-container job-pic-container" style="align-items: center;">
+                            <a href="https://www.mctc-edu.com/" target="_blank"><img src="./assets/MCTC.webp" alt="Profile picture" class="about-pic job-pic"></a>
+                        </div>
+                        <div class="about-details-container job-text">
+                            <h1>Game Programmer (Internship)</h1>
+                            <h3><a href="https://www.mctc-edu.com/" target="_blank" class="click-link">Myanmar Creative Technology College</a> | 12/2018 - 02/2019</h3>
+                            <div class="text-container job-description">
+                                <p>◉ Responsible of creating the Yangon Water Bus Game (Recreational build) which is the simulation of Yangon Water Bus.</p>
+                                <p>◉ Responsible of developing the UI and menu design in Nestle Bear Game which is an endless running type of game and intended for children to promote the Nestle Bear brand.</p>
+                            </div>
+                            <div class="job-image-container" style="align-items: center;">
+                                <img src="./assets/unitygame.png" alt="Profile picture" class="about-pic job-skill-pic">
+                                <img src="./assets/yangonwaterbus.png" alt="Profile picture" class="about-pic job-skill-pic" style="height: 80px; width: 80px;">
+                                <img src="./assets/nestlebearbrand.png" alt="Profile picture" class="about-pic job-skill-pic" style="height: 80px; width: 80px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="section-container" style="margin-left: 30px; margin-right: 30px;">
+                        <div class="section__pic-container job-pic-container" style="align-items: center;">
+                            <a href="https://www.aljmyanmar.com/" target="_blank"><img src="./assets/aljmyanmar.png" alt="Profile picture" class="about-pic job-pic"></a>
+                        </div>
+                        <div class="about-details-container job-text">
+                            <h1>Web Developer</h1>
+                            <h3><a href="https://www.aljmyanmar.com/" target="_blank" class="click-link">ALJ Myanmar</a> | 04/2019 - 10/2021</h3>
+                            <div class="text-container job-description">
+                                <p>◉ Responsible of maintaining the existing projects by fixing the bug, updating the UI design, developing the new functionalities, API code integration, etc.</p>
+                                <p>◉ Working together with other 7 team members and using the version control system such as Git, GitLab, SourceTree to keep track of the code update.</p>
+                                <p>◉ Mainly used the PHP language and FuelPHP framework to develop the websites. As for frontend template, Smarty (PHP template engine) was used. Database was MySQL (PHPMyadmin).</p>
+                                <p>◉ List of projects - <br>　　　◉ <a href="https://www.johnsmedley.jp/" class="click-link">johnsmedley.jp</a><br>　　　◉ <a href="https://www.cos.com/ja-jp/" class="click-link">cos.com/ja-jp/</a><br>　　　◉ <a href="https://www.keitamaruyama.com/" class="click-link">keitamaruyama.com</a><br>　　　◉ <a href="https://www.aands-company.jp/" class="click-link">aands-company.jp</a></p>
+                            </div>
+                            <div class="job-image-container" style="align-items: center;">
+                                <img src="./assets/johnsmedley.png" alt="Profile picture" class="about-pic job-skill-pic" style="height: 90px; width: 280px;">
+                                <img src="./assets/COS.png" alt="Profile picture" class="about-pic job-skill-pic" style="height: 40px; width: 100px;">
+                                <img src="./assets/aands.png" alt="Profile picture" class="about-pic job-skill-pic" style="height: 65px; width: 200px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="section-container" style="margin-left: 30px; margin-right: 30px;">
+                        <div class="section__pic-container job-pic-container" style="align-items: center;">
+                            <a href="https://www.nttdata.com/mm/en" target="_blank"><img src="./assets/nttdatamyanmar.png" alt="Profile picture" class="about-pic job-pic"></a>
+                        </div>
+                        <div class="about-details-container job-text">
+                            <h1>Junior System Engineer</h1>
+                            <h3><a href="https://www.nttdata.com/mm/en" target="_blank" class="click-link">NTT Data Myanmar</a> | 12/2021 - 02/2023</h3>
+                            <div class="text-container job-description">
+                                <p>◉ Responsible of creating test data for data analysis through IICS (Informatica Intelligent Cloud Service) by using Microsoft Excel.</p>
+                                <p>◉ Responsible of teaching the use of MySQL Database to the new internship members (5 members in total).</p>
+                                <p>◉ Learned how to do data analysis through IICS (Informatica Intelligent Cloud Service), PowerCenter, DIH (Data Integration Hub), CIH (Cloud Integration Hub).</p>
+                            </div>
+                            <div class="job-image-container" style="align-items: center;">
+                                <img src="./assets/IICS.png" alt="Profile picture" class="about-pic job-skill-pic" style="height: 95px; width: 200px;">
+                                <img src="./assets/powercenter.png" alt="Profile picture" class="about-pic job-skill-pic" style="height: 100px; width: 200px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers experience-about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.jpg" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Balance Demo</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/nayoolwinjob95/balance-demo-1', '_blank')">
+                            Github
+                        </button>
+                        <!--<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>-->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.jpg" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Employee-Manager</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/nayoolwinjob95/employee-manager', '_blank')">
+                            Github
+                        </button>
+                        <!--<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>-->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.jpg" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Vending Machine</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/nayoolwinjob95/SpringVendingMachine', '_blank')">
+                            Github
+                        </button>
+                        <!--<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:nay95.job@gmail.com">nay95.job@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/nay-oo-lwin-job95/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#language">Language</a></li>
+                    <li><a href="#job-history">Job</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Nay Oo Lwin. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
